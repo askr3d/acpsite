@@ -1,0 +1,51 @@
+{% load static %}
+
+<nav id="barra-nav" class="navbar navbar-expand-lg bg-light shadow-lg">
+    <div class="container d-flex justify-content-between">
+        <a class="navbar-brand" href="{% url 'ACPclient:index' %}">
+            <div>
+                <img src="{% static 'ACPclient/images/headnav/logo.png' %}" class="logo img-fluid mr-2" alt="Kind Heart Charity">
+                <span>
+                    Profesionales en Proximidad Social
+                    <small>Jalisco A.C</small>
+                </span>
+            </div>
+        </a>
+
+        <div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                
+                <li class="nav-item">
+                    <a class="nav-link {% if ruta != '/'%}text-secondary{% else %}text-primary{% endif %}" href="{% url 'ACPclient:index' %}">Inicio</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'ACPclient:index' %}#section_2">Conócenos</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'ACPclient:index' %}#section_3">Afiliate</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'ACPclient:index' %}#section_4">Causas</a>
+                </li>
+                <li class="nav-item">
+                    <a class=" nav-link {% if ruta != '/blog/' %}text-secondary{% else %}text-primary{% endif %}" href="{% url 'ACPclient:blog' %}">Blog</a>
+                </li>
+
+                <li class="nav-item ms-3">
+                    <a class="nav-link custom-btn custom-border-btn btn" href="{% url 'ACPclient:index' %}#section_5">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+
+    </div>
+</nav>

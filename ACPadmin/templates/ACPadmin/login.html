@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en" >
+<head>
+
+  <title>Inicia Sesión</title>
+
+    {% include  '../template_parts/head.html' %}
+
+  <link rel="stylesheet" href="{% static 'ACPadmin/css/login.css' %}">
+
+</head>
+<body>
+  <div class="login-page">
+    <img id="logo" src="{% static 'ACPadmin/images/headnav/logo.png' %}" alt="img">
+    <div class="form">
+
+      <!-- Se quito el action del login -->
+      <form class="login-form" method="post" action="#">
+          {% csrf_token %}
+        <input type="text" placeholder="Usuario" name="usuario" required/>
+        <input type="password" placeholder="Contraseña" name="contrasenia" required/>
+        <button type="submit">Iniciar sesión</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include  '../template_parts/head.html' %}
+
+        <title>Blog</title>
+
+    </head>
+
+    <body>
+    {% include '../template_parts/header_nav.html' %}
+
+    {% load static %}
+        <header class="masthead" style="background-image: url({% static 'images/causes/7.jpg' %})">
+            <div class="container position-relative p-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-12">
+                        <div class="site-heading">
+                            <h1>Noticias</h1>
+                            <span class="subheading">Noticias, opiniones y más...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="blog-contenedor my-4">
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'ACPclient/images/carrusel/1.jpg' %}" alt="Card image cap">
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">
+                                    Man must explore, and this is exploration at its greatest
+                                </h5>
+                                <p class="card-text">
+                                    Problems look mighty small from 150 miles up
+                                </p>
+                            </a>
+                            <p class="card-text"><small class="text-muted">
+                                Posted by
+                                <a href="#!">Start Bootstrap</a>
+                                on September 24, 2022
+                            </small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="{% static 'ACPclient/images/carrusel/2.jpg' %}" alt="Card image cap">
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">
+                                    I believe every human has a finite number of heartbeats.
+                                </h5>
+                                <p class="card-text">
+                                    I don't intend to waste any of mine.
+                                </p>
+                            </a>
+                            <p class="card-text"><small class="text-muted">
+                                Posted by
+                                <a href="#!">Start Bootstrap</a>
+                                on September 18, 2022
+                            </small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="{% static 'ACPclient/images/carrusel/3.jpg' %}" alt="Card image cap">
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">
+                                    Failure is not an option
+                                </h5>
+                                <p class="card-text">
+                                    Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+                                </p>
+                            </a>
+                        <p class="card-text"><small class="text-muted">
+                            Posted by
+                            <a href="#!">Start Bootstrap</a>
+                            on September 18, 2022
+                        </small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top" src="{% static 'ACPclient/images/carrusel/4.jpg' %}" alt="Card image cap">
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">
+                                    Man must explore, and this is exploration at its greatest
+                                </h5>
+                                <p class="card-text">
+                                    Problems look mighty small from 150 miles up
+                                </p>
+                            </a>
+                            <p class="card-text"><small class="text-muted">
+                                Posted by
+                                <a href="#!">Start Bootstrap</a>
+                                on September 24, 2022
+                            </small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="{% static 'ACPclient/images/carrusel/5.jpg' %}" alt="Card image cap">
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">
+                                    I believe every human has a finite number of heartbeats.
+                                </h5>
+                                <p class="card-text">
+                                    I don't intend to waste any of mine.
+                                </p>
+                            </a>
+                            <p class="card-text"><small class="text-muted">
+                                Posted by
+                                <a href="#!">Start Bootstrap</a>
+                                on September 18, 2022
+                            </small></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-img-top img-fluid" src="{% static 'ACPclient/images/carrusel/6.jpg' %}" alt="Card image cap">
+                        <div class="card-body">
+                            <a href="#">
+                                <h5 class="card-title">
+                                    Failure is not an option
+                                </h5>
+                                <p class="card-text">
+                                    Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+                                </p>
+                            </a>
+                        <p class="card-text"><small class="text-muted">
+                            Posted by
+                            <a href="#!">Start Bootstrap</a>
+                            on September 18, 2022
+                        </small></p>
+                        </div>
+                    </div>
+                </div>
+<!--                     
+                    <div class="post-preview col-4">
+                        <a href="post.html">
+                            <h2 class="post-title">Man must explore, and this is exploration at its greatest</h2>
+                            <h3 class="post-subtitle">Problems look mighty small from 150 miles up</h3>
+                        </a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="#!">Start Bootstrap</a>
+                            on September 24, 2022
+                        </p>
+                    </div>
+                    
+                    <hr class="my-4" />
+                    
+                    <div class="post-preview col-4">
+                        <a href="post.html"><h2 class="post-title">I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.</h2></a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="#!">Start Bootstrap</a>
+                            on September 18, 2022
+                        </p>
+                    </div>
+                    
+                    <hr class="my-4" />
+                    
+                    <div class="post-preview col-4">
+                        <a href="post.html">
+                            <h2 class="post-title">Science has not yet mastered prophecy</h2>
+                            <h3 class="post-subtitle">We predict too much for the next year and yet far too little for the next ten.</h3>
+                        </a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="#!">Start Bootstrap</a>
+                            on August 24, 2022
+                        </p>
+                    </div>
+                    
+                    <hr class="my-4" />
+                    
+                    <div class="post-preview col-4">
+                        <a href="post.html">
+                            <h2 class="post-title">Failure is not an option</h2>
+                            <h3 class="post-subtitle">Many say exploration is part of our destiny, but it’s actually our duty to future generations.</h3>
+                        </a>
+                        <p class="post-meta">
+                            Posted by
+                            <a href="#!">Start Bootstrap</a>
+                            on July 8, 2022
+                        </p>
+                    </div>
+                    
+                    <hr class="my-4" /> -->
+                <!-- Pager-->
+                <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#">Posts mas antiguos →</a></div>
+            </div>
+        </div>
+        
+
+        {% include '../template_parts/footer.html' %}
+
+
+
+    </body>
+</html>
