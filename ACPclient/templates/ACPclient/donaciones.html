@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    {% include '../template_parts/head.html' %}
+    <title>Donaciones</title>
+</head>
+<body class="d-flex flex-column h-100">
+    {% include '../template_parts/header_nav.html' %}
+    {% load static %}
+    <div class="d-flex bg-primary h-100">
+        <div class="col-md-8 bg-secondary h-100 p-0"
+            style="
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                background-image: url({% static 'ACPclient/images/donaciones/donacion.jpg' %});
+                ">
+            <div class="w-100 h-100 p-5 d-flex flex-column" 
+                style="background-color: rgba(3, 3, 3, 0.7);">
+                <h1 class="display-1 text-white">
+                    Donaciones
+                </h1>
+                <p class="text-white w-75 strong text-justify p-2" style="line-height: 1.7rem;">
+                    Profesionales en Proximidad Social es una destacada asociación civil pública que se ha destacado por su compromiso inquebrantable con la mejora de la calidad de vida de las comunidades y personas en situación de vulnerabilidad. Su enfoque principal se centra en la promoción del bienestar social, la igualdad de oportunidades y la construcción de un entorno más inclusivo y justo para todos.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4 flex flex-column h-100 p-0">
+            <div class="bg-primary p-4">
+                <p class="text-white">
+                    Donaciones para la asosiacion
+                </p>
+            </div>
+            <div class="m-4 h-75 bg-light p-4">
+                <form>
+                    <div class="form-group">
+                      <label for="nombre">Nombre</label>
+                      <input type="password" class="form-control" id="nombre">
+                    </div>
+                    <div class="form-group">
+                      <label for="apellido">Apellido</label>
+                      <input type="password" class="form-control" id="apellido">
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Correo Electronico</label>
+                      <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                      <label for="telefono">Telefono</label>
+                      <input type="password" class="form-control" id="telefono">
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

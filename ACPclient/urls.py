@@ -8,4 +8,5 @@ urlpatterns = [
     # Vistas Cliente
     path('', views.index, name="index"),
     path('blog/', views.blog, name="blog"),
+    path('donaciones/', views.donaciones, name="donaciones"),
 ]

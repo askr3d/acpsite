@@ -32,12 +32,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'ACPclient:index' %}#section_3">Afiliate</a>
                 </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'ACPclient:index' %}#section_4">Causas</a>
-                </li>
                 <li class="nav-item">
                     <a class=" nav-link {% if ruta != '/blog/' %}text-secondary{% else %}text-primary{% endif %}" href="{% url 'ACPclient:blog' %}">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class=" nav-link {% if ruta != '/donaciones/' %}text-secondary{% else %}text-primary{% endif %}" href="{% url 'ACPclient:donaciones' %}">Donaciones</a>
                 </li>
 
                 <li class="nav-item ms-3">
