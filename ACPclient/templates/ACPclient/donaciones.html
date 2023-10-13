@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="en" class="h-100 w-100">
 <head>
     {% include '../template_parts/head.html' %}
     <title>Donaciones</title>
 </head>
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column h-100 w-100">
     {% include '../template_parts/header_nav.html' %}
     {% load static %}
-    <div class="d-flex bg-primary h-100">
-        <div class="col-md-8 bg-secondary h-100 p-0"
+    <div class="d-flex flex-column flex-md-row bg-primary h-100">
+        <div class="col-lg-8 bg-secondary h-100 w-100 p-0"
             style="
                 background-repeat: no-repeat;
                 background-position: center center;
@@ -25,13 +25,13 @@
                 </p>
             </div>
         </div>
-        <div class="col-md-4 flex flex-column h-100 p-0">
+        <div class="col-lg-4 flex flex-column h-100 p-0">
             <div class="bg-primary p-4">
                 <p class="text-white">
                     Donaciones para la asosiacion
                 </p>
             </div>
-            <div class="m-4 h-75 bg-light p-4 rounded-lg">
+            <div class="m-4 bg-light p-4 rounded-lg">
                 <form>
                     <div class="form-group">
                       <label for="nombre">Nombre</label>
