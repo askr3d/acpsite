@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100 w-100">
+<head>
+    {% include '../template_parts/head.html' %}
+    <title>Causas</title>
+</head>
+<body class="d-flex flex-column h-100 w-100">
+    {% include '../template_parts/header_nav.html' %}
+    {% load static %}
+    <header class="masthead" style="background-image: url({% static 'images/causes/7.jpg' %})">
+        <div class="container position-relative p-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-12">
+                    <div class="site-heading">
+                        <h1>Man must explore, and this is exploration at its greatest</h1>
+                        <span class="subheading">Problems look mighty small from 150 miles up</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container my-4 mx-auto row">
+        <div class="col-4 h-100">
+            <div class="p-3 h-100 w-100">
+                <img class="w-100 h-100 card-img-top" src="{% static 'ACPclient/images/carrusel/1.jpg' %}" alt="Card image cap">
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="p-3">
+                <h1>Lorem ipsum dolor</h1>
+                <p class="w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis debitis nihil nesciunt cumque, soluta deserunt. Dolorem earum delectus ipsa doloremque in ipsam, eius pariatur nihil, accusantium debitis tempora voluptas velit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore nulla commodi quam facilis voluptatum dolorum, maxime veritatis ex distinctio deserunt asperiores quisquam. Eos possimus similique cumque, itaque explicabo velit nulla. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias cumque quia molestiae earum fugit atque dolorem nemo, nam ipsum? Exercitationem in non maxime deleniti et, sit maiores dolore recusandae praesentium?</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+    {% include '../template_parts/footer.html' %}
+</html>

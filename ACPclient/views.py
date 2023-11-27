@@ -15,3 +15,8 @@ def blog(request):
 def donaciones(request):
     return render(request=request, template_name='ACPclient/donaciones.html', context={'ruta': request.path})
 
+def causas(request):
+    return render(request=request, template_name='ACPclient/causas.html', context={'ruta': request.path})
+
+def entrada_blog(request):
+    return render(request=request, template_name='ACPclient/entrada_blog.html', context={'ruta': request.path})
